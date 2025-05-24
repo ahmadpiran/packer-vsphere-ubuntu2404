@@ -1,0 +1,15 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US
+  keyboard:
+    layout: us
+  ssh:
+    install-server: true
+    allow-pw: true
+  packages:
+    - openssh-server
+  user-data:
+    password: ubuntu
+    chpasswd:
+      expire: False
