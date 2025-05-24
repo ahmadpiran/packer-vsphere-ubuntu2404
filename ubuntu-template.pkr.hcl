@@ -59,7 +59,7 @@ source "vsphere-iso" "ubuntu-template" {
 }
 
 build {
-  sources = ["source.vsphere-iso.example"]
+  sources = ["source.vsphere-iso.ubuntu-template"]
 
   provisioner "shell" {
     inline = [
